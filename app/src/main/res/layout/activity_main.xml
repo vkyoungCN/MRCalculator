@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!--上方是结果（表格），下方是参数设置区-->
+
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="@string/result"/>
+
+    <!--横分割线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cce0e0e0"
+        />
+    <!--表格第一行（题头）-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <!--1-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/num1"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--2-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/num2"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--3-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/num10"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--4-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/num30"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--5-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/num60"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--6-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/num360"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--7-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/num720"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+
+
+    </LinearLayout>
+
+    <!--竖分割线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cce0e0e0"
+        />
+
+    <!--表格第一行（结果）-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <!--1-->
+        <TextView
+            android:id="@+id/result_aa"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/bar2"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--2-->
+        <TextView
+            android:id="@+id/result_ab"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/bar2"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--3-->
+        <TextView
+            android:id="@+id/result_ac"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--4-->
+        <TextView
+            android:id="@+id/result_ad"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--5-->
+        <TextView
+            android:id="@+id/result_ae"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--6-->
+        <TextView
+            android:id="@+id/result_af"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--7-->
+        <TextView
+            android:id="@+id/result_ag"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+
+    </LinearLayout>
+
+    <!--行间分割线1（图片式）-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vertical_bars_blue_720x8"
+        />
+
+    <!--第二行（题头）-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <!--1-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/num1440"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--2-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/num2880"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--3-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/d3"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--4-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/d5"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+
+        <!--5-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/d7"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--6-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/d15"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--7-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/d30"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+    </LinearLayout>
+
+    <!--横向分割线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cce0e0e0"
+        />
+    <!--第二行（结果）-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+
+        <!--1-->
+        <TextView
+            android:id="@+id/result_ba"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/bar2"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--2-->
+        <TextView
+            android:id="@+id/result_bb"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/bar2"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--3-->
+        <TextView
+            android:id="@+id/result_bc"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--4-->
+        <TextView
+            android:id="@+id/result_bd"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--5-->
+        <TextView
+            android:id="@+id/result_be"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--6-->
+        <TextView
+            android:id="@+id/result_bf"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--7-->
+        <TextView
+            android:id="@+id/result_bg"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+
+    </LinearLayout>
+
+    <!--横向分割线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cce0e0e0"
+        />
+    <!--第三行，结果和题头-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+        <!--title1-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/month_2"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+        <!--result3.1-->
+        <TextView
+            android:id="@+id/result_ca"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+        <!--title3.2-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/month_3"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+        <!--result3.2-->
+        <TextView
+            android:id="@+id/result_cb"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+
+        <!--title3.3-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/month_6"
+            />
+        <!--分割线 -->
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#cce0e0e0"
+            />
+        <!--result3.3-->
+        <TextView
+            android:id="@+id/result_cc"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:lines="1"
+            />
+
+    </LinearLayout>
+
+
+
+    <!--行间分割线2（图片式）-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vertical_bars_blue_720x8"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <!--功能区分割线（图片式）-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/slash_bars_red_thin"
+        />
+
+    <!--功能分割区题头-->
+    <TextView
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="@string/para_area"
+        />
+
+    <!--横分割线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cce0e0e0"
+        />
+    <!--参数设置，第一行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+        <!--p1.1 title-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="@string/str_a"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:background="#efefef"
+            />
+
+        <!--p1.1 editor-->
+        <TextView
+            android:id="@+id/param_a"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+            android:text="@string/num_100"
+            />
+
+        <!--间隔-->
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            />
+
+        <!--p1.2 title-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="@string/str_alpha"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:background="#efefef"
+            />
+
+        <!--p1.2 editor-->
+        <EditText
+            android:id="@+id/param_alpha"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:background="#f2f2f2"
+            />
+
+
+        <!--间隔-->
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            />
+
+        <!--p1.3 title-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="@string/str_beta"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:background="#efefef"
+            />
+
+        <!--p1.3 editor-->
+        <EditText
+            android:id="@+id/param_beta"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:background="#f2f2f2"
+            />
+
+
+    </LinearLayout>
+
+    <!--横分割线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cce0e0e0"
+        />
+    <!--参数设置，第二行-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+        <!--p2.1 title-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="@string/str_n"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:background="#efefef"
+            />
+
+        <!--p2.1 editor-->
+        <EditText
+            android:id="@+id/param_n"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:background="#f2f2f2"
+            />
+
+        <!--间隔-->
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            />
+
+        <!--p2.2 title-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="@string/str_m"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:background="#efefef"
+            />
+
+        <!--p2.2 editor-->
+        <EditText
+            android:id="@+id/param_m"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+            />
+
+
+        <!--间隔-->
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            />
+
+        <!--p2.3 title-->
+        <TextView
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="@string/str_gama"
+            android:textSize="20sp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:background="#efefef"
+            />
+
+        <!--p2.3 editor-->
+        <TextView
+            android:id="@+id/param_gama"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="#f2f2f2"
+            android:text="@string/num_0"
+            />
+
+
+    </LinearLayout>
+
+    <!--间隔-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        />
+    <!--按钮区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:background="#64dd17"
+            android:onClick="calculate"
+            android:text="@string/calculate"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="@string/bar2"/>
+    </LinearLayout>
+
+    <!--间隔-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        />
+    <!--底线（图片式）-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/slash_bars_red_thin"
+        />
+</LinearLayout>
