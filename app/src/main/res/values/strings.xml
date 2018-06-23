@@ -31,4 +31,23 @@
     <string name="month_2">2Mon</string>
     <string name="month_3">3Mon</string>
     <string name="month_6">6Mon</string>
+    <string name="str_MS">当前MS</string>
+    <string name="str_Time">时限上限</string>
+    <string name="str_targetRMA">targetRM</string>
+    <string name="str_I">I</string>
+    <string name="str_II">II</string>
+    <string name="str_III">III</string>
+    <string name="str_IV">IV</string>
+    <string name="str_V">V</string>
+    <string name="str_VI">VI</string>
+    <string name="str_VII">VII</string>
+    <string name="str_VIII">VIII</string>
+    <string name="str_IX">IX</string>
+    <string name="str_X">X</string>
+    <string name="str_XI">XI</string>
+    <string name="str_XII">XII</string>
+    <string name="str_0" >0</string>
+    <string name="time_calculator">时间计算页</string>
+    <string name="to_time_calculator">转到时间计算页</string>
+
 </resources>

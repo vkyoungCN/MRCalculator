@@ -1,5 +1,6 @@
 package com.vkyoungcn.smartdevices.mrcalculator;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -137,6 +138,11 @@ public class MainActivity extends AppCompatActivity {
         double retainingMemory = m1/m2;
         BigDecimal rM_BD = new BigDecimal(retainingMemory);
         return rM_BD.setScale(1,BigDecimal.ROUND_HALF_UP).doubleValue();
+    }
+
+    public void toTimeActivity(View view){
+        Intent intent = new Intent(this, TimeCalculator.class);
+        startActivity(intent);
     }
 
 }

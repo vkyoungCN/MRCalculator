@@ -964,4 +964,14 @@
         android:scaleType="centerCrop"
         android:src="@drawable/slash_bars_red_thin"
         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:background="#e1bee7"
+        android:onClick="toTimeActivity"
+        android:text="@string/to_time_calculator"
+        />
 </LinearLayout>
